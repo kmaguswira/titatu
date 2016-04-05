@@ -10,7 +10,7 @@ class UserInfo extends Model
 
     protected $primaryKey = 'user_id';
 
-    protected $fillable = ['win', 'lose', 'draw', 'created_at', 'updated_at'];
+    protected $fillable = ['user_id', 'win', 'lose', 'draw', 'created_at', 'updated_at'];
 
 	public function User()
 	{
