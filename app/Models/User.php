@@ -1,11 +1,13 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
+    protected $table = 'users';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -23,4 +25,20 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+
+    public function Room()
+    {
+        return $this->hasOne('App\Models\Room', 'user_id', 'id');
+    }
+
+    public function UserInfo()
+    {
+        return $this->hasOne('App\Models\UserInfo', 'user_id', 'id');
+    }
+
+    public function RoomUser()
+    {
+        return $this->hasOne('App\Models\RoomUser', 'user_id', 'id');
+    }
 }
