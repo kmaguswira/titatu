@@ -10,13 +10,13 @@ class RoomPrivate extends Model
 
     protected $primaryKey = 'room_id';
 
-    protected $fillable = ['password' 'created_at', 'updated_at'];
+    protected $fillable = ['password', 'created_at', 'updated_at'];
 
     protected $hidden = ['password'];
 
 	public function Room()
 	{
-	    return $this->belongsTo('App\Models\Room', 'id', 'room_id');
+	    return $this->belongsTo('App\Models\Room', 'room_id', 'id');
 	}
 
 }

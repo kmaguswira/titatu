@@ -39,6 +39,6 @@ class User extends Authenticatable
 
     public function RoomUser()
     {
-        return $this->hasOne('App\Models\RoomUser', 'user_id', 'id');
+        return $this->hasOne('App\Models\RoomUser', 'id', 'user_id');
     }
 }

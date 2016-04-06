@@ -14,7 +14,7 @@ class Room extends Model
 
 	public function User()
 	{
-	    return $this->belongsTo('App\Models\User', 'id', 'user_id');
+	    return $this->belongsTo('App\Models\User', 'user_id', 'id');
 	}
 
 	public function RoomPrivate()
@@ -24,6 +24,6 @@ class Room extends Model
 
 	public function RoomUser()
 	{
-		return $this->hasOne('App\Models\RoomUser', 'room_id', 'id')
+		return $this->hasMany('App\Models\RoomUser', 'room_id', 'id');
 	}
 }

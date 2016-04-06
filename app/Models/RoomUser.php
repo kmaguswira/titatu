@@ -12,12 +12,12 @@ class RoomUser extends Model
 
 	public function User()
 	{
-	    return $this->belongsTo('App\Models\User', 'id', 'user_id');
+	    return $this->belongsTo('App\Models\User', 'user_id', 'id');
 	}
 
 	public function Room()
 	{
-	    return $this->belongsTo('App\Models\Room', 'id', 'room_id');
+	    return $this->belongsTo('App\Models\Room', 'room_id', 'id');
 	}
 
 }

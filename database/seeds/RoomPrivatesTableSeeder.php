@@ -14,7 +14,7 @@ class RoomPrivatesTableSeeder extends Seeder
 		for($i=1; $i<=2; $i++){
 	        DB::table('room_privates')->insert([
 	            'room_id' => $i,
-	            'password' => bcrypt('tanyague'),
+	            'password' => 'tanyague',
 	        ]);
 	    }        
     }

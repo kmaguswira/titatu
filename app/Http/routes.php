@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+        return view('welcome');
 });
+Route::get('/lobby', 'LobbyController@index');
+Route::auth();
+Route::get('/home', 'HomeController@index');
+Route::get('/room/{id}', 'RoomController@index');
+Route::get('/room/check/{pass}', 'RoomController@check');
+Route::post('/room/create', 'RoomController@create');
