@@ -15,6 +15,7 @@ class RoomUsersTableSeeder extends Seeder
 	        DB::table('room_users')->insert([
 	            'room_id' => $i,
 	            'user_id' => $i + 3,
+                'role' => 'Player',
 	        ]);
 	    }
     }

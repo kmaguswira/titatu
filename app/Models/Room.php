@@ -26,4 +26,14 @@ class Room extends Model
 	{
 		return $this->hasMany('App\Models\RoomUser', 'room_id', 'id');
 	}
+
+	public function BoardRoom()
+	{
+		return $this->hasMany('App\Models\BoardRoom', 'room_id', 'id');
+	}
+
+	public function InfoPlay()
+	{
+		return $this->hasMany('App\Models\BoardRoom', 'room_id', 'id');
+	}
 }

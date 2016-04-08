@@ -4,11 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class RoomUser extends Model
+class BoardRoom extends Model
 {
-    protected $table = 'room_users';
+    protected $table = 'board_rooms';
 
-    protected $fillable = ['room_id', 'user_id', 'role','created_at', 'updated_at'];
+    protected $fillable = ['room_id', 'user_id', 'col', 'created_at', 'updated_at'];
 
 	public function User()
 	{
