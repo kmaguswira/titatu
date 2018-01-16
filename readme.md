@@ -1,28 +1,45 @@
-# Laravel PHP Framework
+# TITATU : Online Multiplayer Game Tic Tac Toe
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+![TITATU](https://raw.githubusercontent.com/kmaguswira/titatu/master/titatu.png)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+Tic-tac-toe (also known as noughts and crosses or Xs and Os) is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game. Now ready for online multiplayer. Watch [demo].
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+# Features!
 
-## Official Documentation
+ - Multiplayer (1 vs 1) 
+ - There are lobby where player hang around and chat with other players and rooms where the game happen
+ - Can create room or join room 
+ - Can show list rooms,the players inside certain room, leaderboard, and a player statistic 
+ - Join room using passphrase or open for public
+ - There are two contestants and max 10 spectators
+ - Contestants are the first two player that enter a room 
+ - Contestants can start, pause, and withdraw game 
+ - Contestant only have 30s to make a move, over 30s means withdraw game 
+ - To make a move use column (A,B,C) and row (1,2,3) representation, e.g. A3 
+ - Win 15 point, draw 10 point, lose 5 point 
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Contributing
+### Installation
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+TITATU requires [PHP](http://php.net) v>=5.5.9 and [Composer](https://getcomposer.org) to run.
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+```sh
+$ git clone https://github.com/kmaguswira/titatu.git
+$ cd titatu
+$ php composer.phar install
+$ php artisan migrate
+```
 
-## License
+Open browser, visit localhost/titatu/public. For more detail, watch the [demo] video.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
-"# titatu" 
+
+
+   [node.js]: <http://nodejs.org>
+   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
+   [express]: <http://expressjs.com>
+   [mongoose]: <https://github.com/Automattic/mongoose>
+   [demo]: <https://www.youtube.com/watch?v=kb8HwQECo7o>
+
+
+  
